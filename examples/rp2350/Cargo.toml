@@ -12,5 +12,5 @@ embassy-rp = { version = "0.8.0", features = ["defmt", "time-driver", "critical-
 embassy-executor = { version = "0.9.1", features = ["arch-cortex-m", "executor-thread", "defmt"] }
 cortex-m-rt = "0.7.0"
 panic-probe = { version = "1.0.0" }
-pll5p49v = { version = "0.1.0", path = "../" }
+pll5p49v = { version = "0.1.0", path = "../../" }
 
