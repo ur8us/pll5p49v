@@ -1,4 +1,7 @@
 {
+  "rust-analyzer.linkedProjects": [
+    "./examples/rp2350/Cargo.toml"
+  ],
     "rust-analyzer.cargo.allTargets": false,
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
