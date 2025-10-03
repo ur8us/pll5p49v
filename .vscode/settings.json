@@ -1,6 +1,7 @@
 {
   "rust-analyzer.linkedProjects": [
-    "./examples/rp2350/Cargo.toml"
+    "./examples/rp2350/Cargo.toml",
+    "./examples/mspm0g3507/Cargo.toml"
   ],
     "rust-analyzer.cargo.allTargets": false,
     "[rust]": {

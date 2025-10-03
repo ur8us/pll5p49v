@@ -1,3 +1,4 @@
 /target
 /examples/rp2350/target
+/examples/mspm0g3507/target
 Cargo.lock

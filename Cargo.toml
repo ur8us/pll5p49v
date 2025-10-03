@@ -9,7 +9,7 @@ license = "MIT OR Apache-2.0"
 repository = "https://github.com/ur8us/pll5p49v"
 
 [dependencies]
-embassy-time = "0.5.0"
+# embassy-time = "0.5.0"
 embedded-hal-async = "1.0.0"
 defmt = "1.0.1"
 defmt-rtt = "1.0.0"

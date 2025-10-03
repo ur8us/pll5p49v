@@ -1,6 +1,6 @@
 #![no_std]
 
-use embassy_time::Timer;
+// use embassy_time::Timer;
 use embedded_hal_async::i2c::I2c;
 
 const I2C_ADDRESS: u8 = 0x6A;
@@ -215,15 +215,15 @@ where
 
     i2c.write(I2C_ADDRESS, &[0x1c, resp_buff[0] & 0x7F]).await?;
 
-    Timer::after_millis(1).await;
+    // Timer::after_millis(1).await;
 
     i2c.write(I2C_ADDRESS, &[0x1c, resp_buff[0] | 0x80]).await?;
 
-    Timer::after_millis(1).await;
+    // Timer::after_millis(1).await;
 
     i2c.write(I2C_ADDRESS, &[0x1c, resp_buff[0] & 0x7F]).await?;
 
-    Timer::after_millis(1).await;
+    // Timer::after_millis(1).await;
 
     // Read register 0x99, output 5 MSBs as a VCO index
 
