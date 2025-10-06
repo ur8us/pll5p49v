@@ -2,7 +2,7 @@
 name = "pll5p49v"
 version = "0.1.0"
 edition = "2021"
-description = "Embassy/async Rust driver for the Renesas 5P49V clocks"
+description = "Embassy/async + blocking Rust driver for the Renesas 5P49V clocks"
 keywords = ["embedded", "pll", "clock", "renesas", "embassy"]
 categories = ["embedded", "asynchronous"]
 license = "MIT OR Apache-2.0"
