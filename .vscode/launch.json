@@ -21,6 +21,26 @@
                     "rttEnabled": true,
                 }
             ]
+        },
+       {
+            "type": "probe-rs-debug",
+            "request": "launch",
+            "name": "probe-rs ch32",
+            "cwd": "${workspaceFolder}",
+            "connectUnderReset": false,
+            "chip": "CH32V003",
+            "flashingConfig": {
+                "flashingEnabled": true,
+                "haltAfterReset": true
+            },
+            "probe": "1a86:8010",
+            "coreConfigs": [
+                {
+                    "coreIndex": 0,
+                    "programBinary": "./target/riscv32ec-unknown-none-elf/debug/${workspaceFolderBasename}"
+                }
+            ]
         }
+
     ]
 }

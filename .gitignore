@@ -3,5 +3,6 @@
 /examples/mspm0g3507/target
 /examples/ch32v003/target
 /examples/py32f030/target
+/examples/stm32f1/target
 
 Cargo.lock
