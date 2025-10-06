@@ -7,7 +7,7 @@ use embassy_rp::gpio::{Level, Output};
 use embassy_rp::i2c::{Config, I2c, InterruptHandler};
 use panic_probe as _;
 
-use pll5p49v::{calibrate_vco, write_config};
+use pll5p49v::{calibrate_vco_async, write_config_async};
 
 // Bind IRQs
 embassy_rp::bind_interrupts!(struct Irqs {
@@ -27,11 +27,13 @@ async fn main(_spawner: Spawner) {
     let vco_fq_hz = 2_700_000_000u32;
     let (out1, out2, out3, out4) = (40_000_000, 25_000_000, 24_000_000, 28_800_000);
 
-    if let Err(e) = write_config(&mut i2c, clock_fq_hz, vco_fq_hz, out1, out2, out3, out4).await {
+    if let Err(e) =
+        write_config_async(&mut i2c, clock_fq_hz, vco_fq_hz, out1, out2, out3, out4).await
+    {
         defmt::error!("Error programming PLL: {:?}", e);
     }
 
-    if let Err(e) = calibrate_vco(&mut i2c).await {
+    if let Err(e) = calibrate_vco_async(&mut i2c).await {
         defmt::error!("Error calibrating VCO: {:?}", e);
     }
 

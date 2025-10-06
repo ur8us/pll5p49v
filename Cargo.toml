@@ -11,5 +11,6 @@ repository = "https://github.com/ur8us/pll5p49v"
 [dependencies]
 # embassy-time = "0.5.0"
 embedded-hal-async = "1.0.0"
+embedded-hal-02 = { package="embedded-hal", version="^0.2" }
 defmt = "1.0.1"
 defmt-rtt = "1.0.0"
