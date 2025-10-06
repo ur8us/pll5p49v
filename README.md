@@ -2,6 +2,8 @@
 
 Tested with 5P49V5925, 5P49V6965.
 
+Schematics: 10 MHz clock is fed into the CLKIN pin (DC coupled, 0.9v level), CLKINB is tied to GND. XIN, XOUT, CLKSEL, SD/OE and OUT0_SEL_I2CB inputs are left floating. 
+
 Embassy, async, tested on RP2350B, MSPM0G3507SRHBR.
 
 Inspired by https://gitlab.com/berkowski/tca9535-rs and https://github.com/daniestevez/ADF4158_SW
