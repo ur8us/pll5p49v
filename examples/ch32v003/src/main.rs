@@ -17,8 +17,6 @@ fn main() -> ! {
     config.rcc = hal::rcc::Config::SYSCLK_FREQ_48MHZ_HSE;
     let p = hal::init(config);
 
-    let mut delay = Delay;
-
     let scl = p.PC2;
     let sda = p.PC1;
     let i2c_config = hal::i2c::Config::default();
@@ -40,6 +38,6 @@ fn main() -> ! {
     let mut led = Output::new(p.PD6, Level::Low, Default::default());
     loop {
         led.toggle();
-        delay.delay_ms(100);
+        Delay.delay_ms(100);
     }
 }

@@ -1,4 +1,7 @@
 /target
 /examples/rp2350/target
 /examples/mspm0g3507/target
+/examples/ch32v003/target
+/examples/py32f030/target
+
 Cargo.lock
