@@ -18,6 +18,7 @@ Inspided by: https://gitlab.com/berkowski/tca9535-rs , https://github.com/danies
 **Usage: add the following dependency to your Cargo.toml:**
 
 [dependencies]
+
 pll5p49v = { version = "0.1.0", git = "https://github.com/ur8us/pll5p49v" }
 
 **Examples:**
