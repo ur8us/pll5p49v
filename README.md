@@ -8,7 +8,7 @@ Schematics: 10 MHz clock is fed into the CLKIN pin (DC coupled, 0.9v level), CLK
 
 The library is using the embedded_hal_async::i2c::I2c trait to pass I2C object to its functions. This makes it compatible to most microcontrollers with Embassy support.
 
-*Blocking:* tested on CH32V003 (requires nightly build)
+*Blocking:* tested on CH32V003 (requires nightly build), Raspberry Pi 4
 
 The library is using the embedded_hal::blocking::i2c (v0.2.x) Read, Write, WriteRead traits to pass I2C object to its functions. This makes it compatible to most microcontrollers without Embassy support.
 
@@ -32,6 +32,8 @@ cd examples/ch32v003
 cd examples/py32f030   *- for both PY32F003 and PY32F030*
 
 cd examples/stm32f1
+
+cd examples/rpi4
 
 *then*
 

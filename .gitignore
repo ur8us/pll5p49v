@@ -4,5 +4,6 @@
 /examples/ch32v003/target
 /examples/py32f030/target
 /examples/stm32f1/target
+/examples/rpi4/target
 
 Cargo.lock
