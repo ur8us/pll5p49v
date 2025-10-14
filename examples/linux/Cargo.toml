@@ -1,0 +1,11 @@
+[package]
+name = "pll5p49v-linux"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+pll5p49v = { version = "0.1.0", path = "../../" }
+
+linux-embedded-hal = "0.4"
+

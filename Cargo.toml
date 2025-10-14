@@ -1,6 +1,6 @@
 [package]
 name = "pll5p49v"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Embassy/async + blocking Rust driver for the Renesas 5P49V clocks"
 keywords = ["embedded", "pll", "clock", "renesas", "embassy"]
@@ -9,8 +9,7 @@ license = "MIT OR Apache-2.0"
 repository = "https://github.com/ur8us/pll5p49v"
 
 [dependencies]
-# embassy-time = "0.5.0"
 embedded-hal-async = "1.0.0"
-embedded-hal-02 = { package="embedded-hal", version="^0.2" }
+embedded-hal = "1.0.0" 
 defmt = "1.0.1"
 defmt-rtt = "1.0.0"

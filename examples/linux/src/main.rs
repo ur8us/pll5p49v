@@ -1,10 +1,11 @@
 use std::error::Error;
 
 use pll5p49v::{calibrate_vco_blocking, write_config_blocking};
-use rpi_pal::i2c::I2c;
+
+use linux_embedded_hal::I2cdev;
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let mut i2c = I2c::new()?;
+    let mut i2c = I2cdev::new("/dev/i2c-13")?; // Here you need to guess the bus number
 
     let clock_fq_hz = 10_000_000u32;
     let vco_fq_hz = 2_700_000_000u32;

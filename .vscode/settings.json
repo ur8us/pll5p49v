@@ -5,7 +5,8 @@
     "./examples/ch32v003/Cargo.toml"
     "./examples/py32f030/Cargo.toml",
     "./examples/stm32f1/Cargo.toml",
-    "./examples/rpi4/Cargo.toml"
+    "./examples/rpi4/Cargo.toml",
+    "./examples/linux/Cargo.toml"
   ],
     "rust-analyzer.cargo.allTargets": false,
     "[rust]": {
